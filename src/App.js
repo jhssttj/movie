@@ -1,5 +1,6 @@
 import './App.css';
 import { useState } from 'react';
+import MovieList from './components/MovieList';
 
 function App() {
   const test = process.env.REACT_APP_API_KEY
@@ -48,10 +49,10 @@ function App() {
     }
 
   ])
-
   
   return (
     <div className="App">
+      <MovieList movies={movies}/>
     </div>
   );
 }
